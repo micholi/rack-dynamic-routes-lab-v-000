@@ -12,7 +12,7 @@ class Application
       if @@items.include?(item)
       resp.write item.price
     else
-      resp.write "We don't have that item"
+      resp.write "Item not found"
       resp.status = 400
     end
     else
